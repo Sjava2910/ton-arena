@@ -77,5 +77,23 @@
 
   <!-- Основной скрипт -->
   <script src="script.js?v=1.1" defer></script>
+  <script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js"></script>
+<script>
+  const tonConnect = new TonConnect({
+    manifestUrl: "https://ton-arena.vercel.app/tonconnect-manifest.json"
+  });
+
+  async function connectWallet() {
+    try {
+      const wallet = await tonConnect.connect();
+      console.log("Wallet connected:", wallet);
+    } catch (err) {
+      console.error("TON Connect error:", err);
+    }
+  }
+
+  // пример кнопки
+  document.getElementById("connectBtn").addEventListener("click", connectWallet);
+</script>
 </body>
 </html>
