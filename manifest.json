@@ -1,34 +1,21 @@
 {
-  "name": "TON ARENA",
-  "short_name": "TON ARENA",
-  "description": "Игра в Telegram WebApp с TON Connect и ареной на 50 TON.",
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#000000",
-  "theme_color": "#000000",
-  "categories": ["game", "telegram", "ton"],
-  "icons": [
+  "app_name": "[custodian]",
+  "name": "[Custodian]",
+  "image": "https://cdn.[custodian].com/ton-connect-icon.png",
+  "about_url": "https://[custodian].com",
+  "universal_url": "https://wallet.[custodian].com/ton-connect",
+  "bridge": [
     {
-      "src": "/icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
+      "type": "sse",
+      "url": "https://bridge.[custodian].com/bridge"
+    }
+  ],
+  "platforms": ["ios", "android", "web", "windows", "macos", "linux"],
+  "features": [
     {
-      "src": "/icons/icon-256.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "/icons/icon-384.png",
-      "sizes": "384x384",
-      "type": "image/png"
-    },
-    {
-      "src": "/icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "name": "SendTransaction",
+      "maxMessages": 4,
+      "extraCurrencySupported": false
     }
   ]
 }
