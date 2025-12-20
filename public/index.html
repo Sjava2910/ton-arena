@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>TON ARENA</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+</head>
+<body>
+  <div class="arena-container">
+    <div class="arena-header">
+      <h1>TON ARENA</h1>
+    </div>
 
+    <div class="progress-ring-container">
+      <svg class="progress-ring" width="200" height="200">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#8A2BE2;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00F0FF;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <circle class="ring-bg" cx="100" cy="100" r="90" />
+        <circle class="ring-fill" cx="100" cy="100" r="90" id="progressRing" />
+      </svg>
+      <div class="progress-label" id="progressLabel">0.00 / 50 TON</div>
+    </div>
+
+    <!-- Убрано: "ваши билеты" — пока нет бэкенда -->
+
+    <button id="topButton" class="btn-top">🔥 ТОП ИГРОКОВ</button>
+
+    <button id="arenaButton" class="btn-arena">
+      <div class="btn-primary-text">ENTER THE ARENA</div>
+      <div class="btn-secondary-text">1 <span class="ton-uppercase">TON</span> = 1 БИЛЕТ • ПРИЗ: 35 <span class="ton-uppercase">TON</span></div>
+    </button>
+
+    <button id="shareButton" class="btn-share">📤 ПОДЕЛИТЬСЯ</button>
+
+    <div class="arena-info">
+      АРЕНА ОТКРОЕТСЯ ПРИ 50 TON!<br>
+      ШАНС ВЫИГРАТЬ — ПРОПОРЦИОНАЛЕН ВКЛАДУ!
+    </div>
+
+    <div id="rulesIcon" class="rules-icon">ℹ️</div>
+    <div id="refreshIcon" class="refresh-icon">🔄</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
