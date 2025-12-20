@@ -6,7 +6,7 @@ const tg = window.Telegram.WebApp;
 tg.expand();
 
 const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-  manifestUrl: 'https://ton-arena-sjava.vercel.app/tonconnect-manifest.json'
+  manifestUrl: 'https://ton-arena.vercel.app/tonconnect-manifest.json'
 });
 
 const arenaButton = document.getElementById('arenaButton');
