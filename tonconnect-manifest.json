@@ -1,7 +1,7 @@
 {
-  "url": "https://ton-arena-sjava.vercel.app",
+  "url": "https://ton-arena.vercel.app",
   "name": "TON ARENA",
-  "iconUrl": "https://sjava2910.github.io/ton-arena/icons/icon-192.png",
+  "iconUrl": "https://ton-arena.vercel.app/icon-192.png",
   "termsOfUseUrl": "https://ton-arena.vercel.app/terms",
   "privacyPolicyUrl": "https://ton-arena.vercel.app/privacy"
 }
