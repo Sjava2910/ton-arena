@@ -1,9 +1,7 @@
 {
-  "url": "https://ton-arena.vercel.app",
-  "name": "TON Arena",
+  "url": "https://ton-arena-sjava.vercel.app",
+  "name": "TON ARENA",
   "iconUrl": "https://ton-arena.vercel.app/icons/icon-192.png",
   "termsOfUseUrl": "https://ton-arena.vercel.app/terms",
-  "privacyPolicyUrl": "https://ton-arena.vercel.app/privacy",
-  "bridgeUrl": "wss://bridge.tonapi.io/bridge",
-  "manifestVersion": 2
+  "privacyPolicyUrl": "https://ton-arena.vercel.app/privacy"
 }
